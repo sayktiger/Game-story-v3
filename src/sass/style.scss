@@ -1,0 +1,21 @@
+//Нормализации CSS
+@import "libs/normalize";
+
+
+//Шрифты
+@import "../fonts/fonts";
+
+
+*{
+    font-family: 'Nunito', sans-serif;
+    box-sizing: border-box;
+}
+
+
+
+//Переменные
+@import "variable/variable";
+
+
+//Адаптив
+@import "media/media";
