@@ -1,0 +1,135 @@
+.head{
+    padding: 30px 0 0 0;
+    // background: url('../img/head/head-bg.png') center center /cover no-repeat;
+    &__wrapper{
+        background: url("../img/head/head-menu.png") top center /cover no-repeat;
+        padding: 55px 167px 34px 167px;
+        margin-bottom: 60px;
+    }
+    &__list{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        max-width: 736px;
+        // background: url("../img/head/head-menu.png") center center /100% no-repeat;
+    }
+    &__item{
+        list-style: none;
+        a {
+            font-family: 'Tobi-Light', sans-serif;
+            font-style: normal;
+            font-weight: 300;
+            font-size: 25px;
+            line-height: 120%;
+            color: $main;
+            text-shadow: 0px 0px 2px #3A0805;
+            text-decoration: none;
+            text-transform: uppercase;
+            transition: 0.3s all;
+            &:hover{
+                color: $title;
+                text-shadow: 0px 0px 2px #3A0805;
+            }
+        }
+    }
+    .swiper{
+        max-width: 630px;
+        max-height: 496px;
+        overflow: hidden;
+    }
+    .swiper-slide{
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        max-width: 410px;
+        height: 496px;
+        transition: 0.6s all;
+    }
+    .swiper-slide-next, .swiper-slide-prev{
+        opacity: 0;
+        transition: 0.3s all;
+    }
+    .swiper-button-next:after, .swiper-button-prev:after {
+        display: none;
+    }
+    .swiper-button-next, .swiper-button-prev{
+        width: 80px;
+        height: 84px;
+        img {
+            width: 80px;
+            height: 84px;
+        }
+        
+    }
+
+    &__squirrel{
+        display: flex;
+        align-items: baseline;
+        justify-content: space-between;
+        margin-bottom: 169px;
+        &__left{
+            img{
+                width: 300px;
+                height: 308px;
+            }
+        }
+        &__right{
+            width: 300px;
+            height: 372px;
+        }
+    }
+    .head__game-story{
+        background: url("../img/head/game-story.png") top center /100% 100% no-repeat;
+        &__wrapper{
+            max-width: 955px;
+            margin: 0 auto;
+            padding: 90px 40px 375px;
+        }
+        &__block{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+        &__text{
+            max-width: 460px;
+            min-height: 210px;
+            &:nth-child(1){
+                margin-right: 50px;
+            }
+        }
+        &__btn{
+            font-family: 'Tobi-Light';
+            font-style: normal;
+            font-weight: 300;
+            font-size: 25px;
+            line-height: 120%;
+            text-align: center;
+            text-transform: uppercase;
+            color: $title;
+            text-shadow: 0px 0px 2px #3A0805;
+            background-color: #372924;
+            padding: 15px 60px;
+            border: 5px solid $title;
+            border-radius: 15px;
+            cursor: pointer;
+            display: block;
+            margin: 0 auto;
+            margin-top: 41px;
+            position: relative;
+            transition: 0.3s all;
+            &:before{
+                content: url("../img/acorn.png");
+                position: absolute;
+                width: 52px;
+                height: 72px;
+                bottom: -20px;
+                right: -15px;
+            }
+            &:hover{
+                background-color: #FFBF8C;
+            }
+        }
+    }
+    
+}
